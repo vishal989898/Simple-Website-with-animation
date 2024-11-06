@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Verdana; */
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    animation: backgrnd 10s infinite linear;
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(images/ram-mandir.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    height: 15vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo {
+    width: 25%;
+    text-align: center;
+}
+
+nav .logo h1 {
+    animation: beat .25s infinite alternate;
+    font-size: 28px;
+}
+
+nav .menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav .menu a {
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav .menu a:first-child {
+    color: #00b894;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+
+
+section h3 {
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+section h1 {
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    /* color: #eee; */
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+.b1:hover {
+    background-color: #00B894;
+    color: white;
+}
+
+.b2:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+section .b1 {
+
+    background: #fff;
+    color: black;
+}
+
+section .b2 {
+    background: #00B894;
+    color: white;
+}
+
+.change::after {
+    content: "";
+    animation: changeTxt 10s infinite linear;
+    color: rgb(135, 232, 253);
+    text-shadow: 1px 1px 2px black;
+}
+
+@keyframes backgrnd {
+    0% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://static.toiimg.com/photo/98732111.cms);
+
+    }
+
+    25% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://haridwartourtrip.com/wp-content/uploads/haridwar-banner3.webp);
+
+    }
+
+    50% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://cdn-gmldj.nitrocdn.com/MzocZdmkUoGzKbfrmziNgKraKcMhCMkx/assets/static/optimized/rev-1cc2619/wp-content/uploads/2022/10/prem-mandir-vrindavan-1024x576.jpeg);
+
+    }
+
+    75% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://www.citybit.in/wp-content/uploads/2024/03/Jagannath-Mandir-Puri-Odisha-1.jpg);
+    }
+
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url(https://upload.wikimedia.org/wikipedia/commons/5/56/Kedarnath_Temple_in_Rainy_season.jpg);
+
+    }
+}
+
+@keyframes changeTxt {
+    0% {
+        content: "Ayodhya";
+        font-size: 44px;
+    }
+
+    25% {
+        content: "Haridwar";
+        font-size: 44px;
+    }
+
+    50% {
+        content: "Prem Mandir";
+        font-size: 44px;
+    }
+
+    75% {
+        content: " Jagannath Temple";
+        font-size: 44px;
+    }
+
+    100% {
+        content: "Kedarnath";
+        font-size: 24px;
+    }
+}
+
+@keyframes beat {
+    to {
+        transform: scale(0.7);
+    }
+}
